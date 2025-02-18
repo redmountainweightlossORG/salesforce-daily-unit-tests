@@ -37,7 +37,7 @@ jobs:
       run: echo ${{ secrets[format('SFDX_{0}_URL', env.ENVIRONMENT)] }} > ./SFDX_${{ matrix.sf_org_alias }}_URL.txt
 
     - name: Authenticate to Org
-      run: sfdx force:sfdxurl:store -f ./SFDX_${{ matrix.sf_org_alias }}_URL.txt -s -a ${{ matrix.sf_org_alias }}
+      run: sfdx org:login:sfdx-url --alias ${{ matrix.sf_org_alias }} --sfdx-url-file ./SFDX_${{ matrix.sf_org_alias }}_URL.txt
 
     - name: Run all tests and store test run Id
       run: |
