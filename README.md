@@ -1,4 +1,4 @@
-        Pass  | Fail
+Pass  | Fail
 ------------- | -------------
 Content Cell  | ShipStationQueueAssignment_Test
 Content Cell  | ContentDocumentLinkDtControllerTest
