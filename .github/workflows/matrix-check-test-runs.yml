@@ -72,7 +72,7 @@ jobs:
         # For posting a simple plain text message
         payload-file-path: "slackPayload.json"
       env:
-        SLACK_BOT_TOKEN: xoxb-8480403490595-8482994464836-P11VZAvP3kekHkwmNtOaDNvl
+        SLACK_BOT_TOKEN: 'xoxb-8480403490595-8482994464836-P11VZAvP3kekHkwmNtOaDNvl'
         
   send_final_message:
     runs-on: ubuntu-latest
@@ -104,5 +104,5 @@ jobs:
                 ]
               }
         env:
-          SLACK_BOT_TOKEN: xoxb-8480403490595-8482994464836-P11VZAvP3kekHkwmNtOaDNvl
+          SLACK_BOT_TOKEN: 'xoxb-8480403490595-8482994464836-P11VZAvP3kekHkwmNtOaDNvl'
         
