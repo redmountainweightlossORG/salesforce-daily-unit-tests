@@ -68,11 +68,11 @@ jobs:
         # Slack channel id, channel name, or user id to post message.
         # See also: https://api.slack.com/methods/chat.postMessage#channels
         # You can pass in multiple channels to post to by providing a comma-delimited list of channel IDs.
-        channel-id: 'C060XEY3BS5'
+        channel-id: 'C08E4BYJVR9'
         # For posting a simple plain text message
         payload-file-path: "slackPayload.json"
       env:
-        SLACK_BOT_TOKEN: xoxb-1031593966486-8492526911697-iria6m2OPGPzmpUJp0ed1XV7
+        SLACK_BOT_TOKEN: xoxb-8480403490595-8482994464836-P11VZAvP3kekHkwmNtOaDNvl
         
   send_final_message:
     runs-on: ubuntu-latest
@@ -87,7 +87,7 @@ jobs:
           # Slack channel id, channel name, or user id to post message.
           # See also: https://api.slack.com/methods/chat.postMessage#channels
           # You can pass in multiple channels to post to by providing a comma-delimited list of channel IDs.
-          channel-id: 'C060XEY3BS5'
+          channel-id: 'C08E4BYJVR9'
           # For posting a simple plain text message
           payload: |
             {
@@ -104,5 +104,5 @@ jobs:
                 ]
               }
         env:
-          SLACK_BOT_TOKEN: xoxb-1031593966486-8492526911697-iria6m2OPGPzmpUJp0ed1XV7
+          SLACK_BOT_TOKEN: xoxb-8480403490595-8482994464836-P11VZAvP3kekHkwmNtOaDNvl
         
