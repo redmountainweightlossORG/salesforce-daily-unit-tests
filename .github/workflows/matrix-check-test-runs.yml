@@ -48,7 +48,8 @@ jobs:
       run: echo ${{ secrets[format('SFDX_{0}_URL', env.ENVIRONMENT)] }} > ./SFDX_${{ matrix.sf_org_alias }}_URL.txt
 
     - name: Authenticate to Org
-      run: sfdx org:login:sfdx-url --alias ${{ matrix.sf_org_alias }} --sfdx-url-file ./.github/workflows/SFDX_${{ matrix.sf_org_alias }}_URL.txt
+      #run: sfdx org:login:sfdx-url --alias ${{ matrix.sf_org_alias }} --sfdx-url-file ./.github/workflows/SFDX_${{ matrix.sf_org_alias }}_URL.txt
+      run: sfdx auth:sfdxurl:store -f ./SFDX_${{ matrix.sf_org_alias }}_URL.txt -s -a ${{ matrix.sf_org_alias }}
 
     # First, run the "get test" command just to print the output to the GitHub terminal. This way if you come back to the job, you can see the entire output
     # The second command is run so that we can put the output on a .json file, that we use to create the slack notification via a nodejs script
