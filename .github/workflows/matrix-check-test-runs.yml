@@ -69,7 +69,7 @@ jobs:
         # Slack channel id, channel name, or user id to post message.
         # See also: https://api.slack.com/methods/chat.postMessage#channels
         # You can pass in multiple channels to post to by providing a comma-delimited list of channel IDs.
-        channel-id: 'C060XEY3BS5'
+        channel-id: 'C08JWN1UDHC'
         # For posting a simple plain text message
         payload-file-path: "slackPayload.json"
       env:
@@ -88,7 +88,7 @@ jobs:
           # Slack channel id, channel name, or user id to post message.
           # See also: https://api.slack.com/methods/chat.postMessage#channels
           # You can pass in multiple channels to post to by providing a comma-delimited list of channel IDs.
-          channel-id: 'C060XEY3BS5'
+          channel-id: 'C08JWN1UDHC'
           # For posting a simple plain text message
           payload: |
             {
