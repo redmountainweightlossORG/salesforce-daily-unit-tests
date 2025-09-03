@@ -57,8 +57,8 @@ jobs:
     # necessary so that we can send the notification
     - name: "Extract apex test results"
       run: |
-        sf apex get test --target-org demosbox.slavak@redmountainweightloss.com -i ${{env.TEST_RUN_ID}} || true
-        sf apex get test --target-org demosbox.slavak@redmountainweightloss.com -i ${{env.TEST_RUN_ID}} --json > result.json || true
+        sf apex get test --target-org slavak@redmountainweightloss.com.uat -i ${{env.TEST_RUN_ID}} || true
+        sf apex get test --target-org slavak@redmountainweightloss.com.uat -i ${{env.TEST_RUN_ID}} --json > result.json || true
         node parseResult.js 
 
 
